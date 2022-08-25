@@ -4093,6 +4093,8 @@ MonoBehaviour:
     m_Bits: 256
   grdChecker: {fileID: 185048840}
   grdCheckerRad: 0.3
+  airTime: 0.25
+  airTimeCounter: 0
 --- !u!1 &1488681524
 GameObject:
   m_ObjectHideFlags: 0
