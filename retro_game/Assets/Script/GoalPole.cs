@@ -17,8 +17,8 @@ public class GoalPole : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.tag == "Player") { 
-            Debug.Log("You Win!")
+        if (other.gameObject.tag == "Player") {
+            Debug.Log("You Win!");
         }
     }
 }
