@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerStart = thePlayer.transform.position; 
+        playerStart = new Vector2(0, 0); //thePlayer.transform.position; 
     }
 
     public void Victory() {

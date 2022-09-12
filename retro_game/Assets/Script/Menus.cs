@@ -6,7 +6,6 @@ public class Menus : MonoBehaviour
 {
     public void Replay() {
         FindObjectOfType<GameManager>().Reset();
-        
     }
 
     public void QuitGame() {

@@ -21,10 +21,13 @@ public class PlayerController : MonoBehaviour
     private Animator theAnimator;
 
     public GameManager theGM;
+    private LivesManager theLM;
 
     // Start is called before the first frame update
     void Start()
     {
+        theLM = FindObjectOfType<LivesManager>();
+
         theRB2D=GetComponent<Rigidbody2D>();
         theAnimator = GetComponent<Animator>();
 
@@ -88,7 +91,8 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag == "Spike") {
             Debug.Log("Ouch!");
-            theGM.GameOver();
+            //theGM.GameOver();
+            theLM.TakeLife(); 
         }
     }
 }
